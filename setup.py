@@ -48,6 +48,7 @@ def add_command(name):
 # finally,
 # call distutils with all needed info
 PACKAGEDATA = {
+    "name": "testbuild",
     "cmdclass": cmdclass,
     "packages": ['testmod'],
     "package_dir": {'testmod': 'src_py'},

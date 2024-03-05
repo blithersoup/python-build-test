@@ -34,13 +34,13 @@ class MissingModule:
             print(message)
 
 try:
-    import testbuild.mod_py
-    from testbuild.mod_py import test_cls_py
+    import testmod.mod_py
+    from testmod.mod_py import test_cls_py
 except (ImportError, OSError):
     mod_py = MissingModule("mod_py", urgent=1)
 
 try:
-    import testbuild.mod_c
-    from testbuild.mod_c import test_cls_c
+    import testmod.mod_c
+    from testmod.mod_c import test_cls_c
 except (ImportError, OSError):
     mod_c = MissingModule("mod_c", urgent=1)

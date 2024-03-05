@@ -8,7 +8,7 @@ typedef struct _der_class {
 } der_class;
 
 typedef struct {
-    PyObject_HEAD struct der_class *cls;
+    PyObject_HEAD der_class *cls;
     
     int owner;
     
